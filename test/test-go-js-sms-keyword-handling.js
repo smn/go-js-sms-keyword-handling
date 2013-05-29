@@ -49,7 +49,7 @@ describe("SMS keyword application", function() {
         var p = tester.check_state({
             user: null,
             content: '+27123456789',
-            next_state: 'plus',
+            next_state: 'start',
             response: 'Adding 27123456789 to your list',
             continue_session: false
         });
