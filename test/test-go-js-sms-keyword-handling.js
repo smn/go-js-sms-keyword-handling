@@ -45,12 +45,23 @@ describe("SMS keyword application", function() {
         p.then(done, done);
     });
 
+    it('should accept +msisdn as valid input', function(done) {
+        var p = tester.check_state({
+            user: null,
+            content: '+27123456789',
+            next_state: 'plus',
+            response: 'Adding 27123456789 to your list',
+            continue_session: false,
+        });
+        p.then(done, done);
+    });
+
     it('should complain about "blue" as a keyword', function(done) {
         var p = tester.check_state({
             user: null,
             content: 'blue',
             next_state: 'start',
-            response: 'Invalid keyword provided',
+            response: '^Choices are red',
             continue_session: true
         });
         p.then(done, done);
