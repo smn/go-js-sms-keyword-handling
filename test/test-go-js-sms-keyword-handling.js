@@ -51,7 +51,7 @@ describe("SMS keyword application", function() {
             content: '+27123456789',
             next_state: 'plus',
             response: 'Adding 27123456789 to your list',
-            continue_session: false,
+            continue_session: false
         });
         p.then(done, done);
     });
