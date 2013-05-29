@@ -1,7 +1,7 @@
 {
-  "name": "go-kv-store",
+  "name": "go-js-sms-keyword-handling",
   "version": "0.0.1",
-  "description": "A example Vumi Go USSD application using the key value store.",
+  "description": "A example Vumi Go USSD application doing SMS keyword handling.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/smn/go-kv-store"
+    "url": "git://github.com/smn/go-js-sms-keyword-handling"
   },
   "keywords": [
     "vumi",
-    "ussd"
+    "sms"
   ],
   "author": "Simon de Haan <simon@praekeltfoundation.org>",
   "license": "BSD",

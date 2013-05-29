@@ -1,7 +1,7 @@
 var fs = require("fs");
 var assert = require("assert");
 var vumigo = require("vumigo_v01");
-var app = require("../lib/go-kv-store");
+var app = require("../lib/go-js-sms-keyword-handling");
 
 // This just checks that you hooked you InteractionMachine
 // up to the api correctly and called im.attach();
@@ -17,7 +17,7 @@ describe("test api", function() {
     });
 });
 
-describe("Key Value store application", function() {
+describe("SMS keyword application", function() {
 
     var tester = new vumigo.test_utils.ImTester(app.api, {
         async: true
