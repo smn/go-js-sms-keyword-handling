@@ -27,7 +27,7 @@ describe("SMS keyword application", function() {
         var p = tester.check_state({
             user: null,
             content: 'red',
-            next_state: 'red',
+            next_state: 'start',
             response: 'You chose red!',
             continue_session: false
         });
@@ -38,7 +38,7 @@ describe("SMS keyword application", function() {
         var p = tester.check_state({
             user: null,
             content: 'green',
-            next_state: 'green',
+            next_state: 'start',
             response: 'You chose green!',
             continue_session: false
         });
